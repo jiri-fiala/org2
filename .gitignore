@@ -2,3 +2,5 @@
 css/
 images/
 dist/
+node_modules/
+
