@@ -336,7 +336,7 @@ var PathConfig = require('./grunt-settings.js');
   grunt.registerTask('bs', ['browserSync']);
 
   //watch + browser sync
-  grunt.registerTask('dev', ['browserSync', 'watch']);
+  grunt.registerTask('dev', ['clean:temp', 'imgmin', 'cssbeauty', 'browserSync', 'watch']);
 
   //create svg sprite
   grunt.registerTask('svgsprite', ['svgmin', 'svgstore', 'svg2string']);
