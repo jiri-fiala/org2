@@ -1,0 +1,88 @@
+#footer {
+  background: #1b2a38;
+  .holder {
+    @include container;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    @include media('>=tablet') {
+      padding-top: 81px;
+      padding-bottom: 86px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.footer-social-networks {
+  @extend %listreset;
+  letter-spacing: -.32em;
+  text-align: center;
+  margin:  0;
+  @include media('>=tablet') {
+    width: 275px;
+    text-align: right;
+  }
+  @include media('>=widescreen') {
+    margin:  0 62px 0 0;
+  }
+  li {
+    @include inline;
+    letter-spacing: normal;
+    font-size: 27px;
+    line-height: 36px;
+    margin:  0 10px;
+    @include media('>=tablet') {
+      margin:  4px 0 0 40px;
+    }
+  }
+  a {
+    color: $white;
+    display: block;
+    &.icon-google {
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      background: $white;
+      color: #1b2a38;
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+      margin:  2px 0 0;
+    }
+  }
+}
+.footer-logo {
+  max-width: 127px;
+  margin: 0 auto 15px;
+  @include media('>=tablet') {
+    margin: 0;
+  }
+  @include media('>=widescreen') {
+   margin:  0 0 0 52px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  a {
+    &:hover { opacity: 1; }
+  }
+}
+.powered-logo {
+  margin: 0 auto 15px;
+  @include media('>=tablet') {
+    margin: 9px 0 0;
+  }
+  @include media('>=widescreen') {
+    margin:  9px 0 0 168px;
+  }
+  max-width: 140px;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  a {
+    &:hover { opacity: 1; }
+  }
+}
